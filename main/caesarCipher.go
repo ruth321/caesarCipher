@@ -9,12 +9,12 @@ func main() {
 	//Инициализация и ввод шифруемого сообщения.
 	var unenc string
 	fmt.Print("Enter message (without spaces): ")
-	fmt.Scan(&unenc)
+	_, _ = fmt.Scan(&unenc)
 
 	//Инициализация и ввод значения сдвига.
 	var key byte
 	fmt.Print("Enter key: ")
-	fmt.Scan(&key)
+	_, _ = fmt.Scan(&key)
 
 	//Инициализация среза для хранения зашифрованного сообщения.
 	enc := make([]byte, len(unenc))
